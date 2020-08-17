@@ -1,14 +1,13 @@
 /**
-	@file breakout.h
-	@author 
-	@version Declarations for CS 150 Homework
-*/
-#ifndef BREAKOUT_H_
+ *	@file breakout.h
+ *	@author Chris Tio
+ */
+ #ifndef BREAKOUT_H_
 #define BREAKOUT_H_
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <vector>
- 
+
 // The brick structure and functions
 struct Brick
 {
