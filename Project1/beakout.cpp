@@ -1,7 +1,6 @@
 /**
  *  @file breakout.cpp
- *  @author your name and id goes here
- *  @version your day and time goes here
+ *  @author Chris Tio
  */
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
@@ -44,7 +43,7 @@ static void initBall(Ball& ball);
 void init(Game& game, RenderWindow * App)
 {
 	// Initialize Game window
-	game.window = App; 
+	game.window = App;
 	game.window->setFramerateLimit(60);
 	// Initialize other game components
 	initBricks(game.bricks);
@@ -99,7 +98,7 @@ static void update(Game& g)
 {
 	// Create a vector to hold movement of paddle initalized to (0,0)
 	Vector2f velocity = Vector2f();
-	
+
 	// Check whether L/R arrow keys are being pressed
 	if (Keyboard::isKeyPressed(Keyboard::Left))
 		velocity.x -= PADDLE_VELOCITY;
@@ -219,7 +218,7 @@ static void initBricks(vector<Brick>& bricks)
 		//Change color for every other row
 		switch (row)
 		{
-			case 1: 
+			case 1:
 				brickColor = Color(255, 200, 0); // no built-in orange
 				break;
 			case 3:
